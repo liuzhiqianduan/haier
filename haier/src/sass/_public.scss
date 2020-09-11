@@ -1,0 +1,39 @@
+//公用样式清除
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,hr,ul,ol,td,input,option,textarea{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: DeliciousRoman, arial, Microsoft Yahei, \5b8b\4f53, sans-serif !important;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+}
+
+//申明混合器
+//宽高
+@mixin size ($width,$height,$float){
+	width: $width;
+	height: $height;
+	float: $float;
+}
+//定位
+@mixin position ($position,$left,$top){
+	position: $position;
+	left: $left;
+	top: $top;
+}
+//字体
+@mixin font ($font-size,$line-height,$color){
+	font-size: $font-size;
+	line-height: $line-height;
+	color: $color;
+}
+
+

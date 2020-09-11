@@ -1,0 +1,61 @@
+// 导入公共样式
+@import 'public';
+/* header */
+.header_box{
+	width: 100%;
+	background: white;
+}
+.headers{
+	@include size(1236px,60px,null);
+	margin: 0 auto;
+
+}
+.header_left{
+	@include size(618px,60px,left);
+	span{
+		@include font(16px,60px,#333);
+		margin-left: 18px;
+	}
+}
+.header_right{
+	@include size(618px,60px,right);
+	p{
+		@include font(14px,60px,#333);
+		display: block;
+		text-align: right;
+	}
+	a{
+		@include font(null,null,#32beff);
+	}
+}
+.header_logo{
+	@include size(71px,21px,null);
+	display: inline-block;
+	vertical-align: text-bottom;
+	background: url(../img/login_icon_1010.gif) no-repeat -39px -61px;
+}
+
+/* main */
+.main_box{
+	@include size(100%,792px,null);
+	background: url(../img/vipuser_zhuce_bg3.jpg) no-repeat;
+}
+.main{
+	@include size(1236px,769px,null);
+	margin: 0 auto;
+	.main_header{
+		@include size(1236px,150px,null);
+		p{
+			@include font(28px,150px,#333);
+			text-align: center;
+		}
+	}
+	.main_body{
+		@include size(null,480px,null);
+		.main_body_box{
+			@include size(840px,480px,null);
+			margin: 0 auto;
+			background: white;
+		}
+	}
+}

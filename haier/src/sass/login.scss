@@ -1,0 +1,185 @@
+// 导入公共样式
+@import 'public';
+// 头部补充
+#viplogin{
+    color: #666;;
+}
+#viplogin:hover{
+    color: #32beff;
+}
+
+// main
+.main{
+    @include size(100%,null,null);
+    background: url(../img/vipuser_denglubg3.jpg) no-repeat 50%;
+    .main_box{
+        @include size(1236px,867px,null);
+        margin: 0 auto;
+        .main_box_body{
+            @include size(618px,488px,right);
+            margin-top: 218.5px;
+            .main_box_bodys{
+                @include size(420px,null,null);
+                background: #ffffff;
+                margin: 0 auto;
+                padding-bottom: 30px;
+                .main_body_top{
+                    @include font(16px,60px,#515151);
+                    height: 60px;
+                    text-indent: 30px;
+                    border-bottom: 1px solid #e5e5e5;
+                }
+                ul{
+                    @include size(360px,39px,null);
+                    margin: 25px auto;
+                    #login1{
+                        li{
+                            @include size(null,38px,left);
+                            @include font(14px,38px,#005aaa);
+                            margin-right: 40px;
+                            padding-left: 50px;
+                            position: relative;
+                            i{
+                                @include size(36px,38px,null);
+                                background: url(../img/login_icon_1010.gif) no-repeat 2px -92px;
+                                display: block;
+                                @include position(absolute,0,0);
+                                background-position: 0 -54px;
+                            }
+                        }
+                    }
+                    #login2{
+                        li{
+                            @include size(null,38px,left);
+                            @include font(14px,24px,#999);
+                            padding-left: 48px;
+                            position: relative;
+                            i{
+                                @include size(36px,38px,null);
+                                background: url(../img/login_icon_1010.gif) no-repeat 2px -129px;
+                                display: block;
+                                @include position(absolute,0,0);
+                            }
+                            p{
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                    #login3{
+                        li{
+                            @include size(34px,38px,left);
+                            margin-left: 48px;
+                            background: url(../img/login_icon_1010.gif) no-repeat 0 -206px;
+                            display: block;
+                        }
+                    }
+                }
+                .login_text{
+                    @include size(360px,65px,null);
+                    margin: 0 auto;
+                    position: relative;
+                    background: #fff;
+                    #tx{
+                        @include size(307px,42px,null);
+                        @include font(14px,42px,#999);
+                        padding: 3px 3px 3px 48px;
+                        position: relative;
+                        outline: 0;
+                        border: 1px solid #d6dbdd;
+                    }
+                    label{
+                        display: block;
+                        position: absolute;
+                        margin-left: 50px;
+                        top: 0;
+                        @include font(14px,50px,#999);
+                        z-index: 88px;
+                    }
+                    span{
+                        @include size(26px,24px,null);
+                        display: inline-block;
+                        position: relative;
+                        top: -36px;
+                        margin-left: 13px;
+                        background: url(../img/login_icon_1010.gif) -44px -94px no-repeat;
+                    }
+                }
+                .login_pwd{
+                    @include size(360px,65px,null);
+                    margin: 0 auto;
+                    position: relative;
+                    background: #fff;
+                    #pwd{
+                        @include size(272px,42px,null);
+                        @include font(14px,42px,#999);
+                        padding: 3px 38px 3px 48px;
+                        position: relative;
+                        outline: 0;
+                        border: 1px solid #d6dbdd;
+                    }
+                    #pwd_icon{
+                        @include size(26px,24px,null);
+                        display: inline-block;
+                        position: relative;
+                        top: -36px;
+                        margin-left: 12px;
+                        background: url(../img/login_icon_1010.gif) -44px -131px no-repeat;
+                    }
+                    a{
+                        span{
+                            @include size(28px,28px,null);
+                            display: inline-block;
+                            position: relative;
+                            top: -65px;
+                            margin-left: 323px;
+                            background: url(../img/login_icon_1010.gif) -79px -126px no-repeat;
+                        }
+                    }
+                    label{
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        margin-left: 50px;
+                        @include font(14px,50px,#999);
+                    }
+                }
+            }
+            .consent{
+                margin-left: 30px;
+                @include font(14px,24px,#666);
+                margin-bottom: 20px;
+                text-indent: 11px;
+                i{
+                    display: block;
+                    float: left;
+                    @include size(24px,24px,null);
+                    background: url(../img/login_icon_1010.gif) 0 -282px no-repeat;
+                }
+                a{
+                    color: #32beff;
+                    font-size: 12px;
+                }
+            }
+            .consent_botton{
+                margin-left: 30px;
+                @include font(14px,24px,#666);
+                margin-bottom: 20px;
+                text-indent: 11px;
+                i{
+                    display: block;
+                    float: left;
+                    @include size(24px,24px,null);
+                    background: url(../img/login_icon_1010.gif) 0 -306px no-repeat;
+                }
+            }
+            .login_btn{
+                @include size(360px,50px,null);
+                @include font(16px,50px,#fff);
+                text-align: center;
+                letter-spacing: 2px;
+                background-color: #c6cacb;
+                margin: 0 auto;
+            }
+        }
+    }
+}

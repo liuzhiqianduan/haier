@@ -39,7 +39,7 @@
 
 // foot
 .footer{
-	@include size(1680px,null,null);
+	@include size(100%,null,null);
 	background: #2b2c2d;
 	padding: 20px 0;
 	.foot{

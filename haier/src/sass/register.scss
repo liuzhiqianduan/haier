@@ -3,10 +3,10 @@
 
 // main
 .main_box{
-	@include size(100%,769px,null);
+	@include size(100%,null,null);
 	background: url(../img/vipuser_zhuce_bg3.jpg) no-repeat;
 	.main{
-		@include size(1236px,769px,null);
+		@include size(1236px,null,null);
 		margin: 0 auto;
 		.main_header{
 			@include size(1236px,150px,null);
@@ -16,15 +16,15 @@
 			}
 		}
 		.main_body{
-			@include size(null,480px,null);
 			.main_body_box{
-				@include size(840px,480px,null);
+				@include size(840px,null,null);
 				margin: 0 auto;
 				background: white;
 				padding-top: 46px;
+				padding-bottom: 25px;
 				box-sizing: border-box;
 				.main_module{
-					@include size(430px,275px,left);
+					@include size(430px,null,left);
 					margin-left: 177px;
 					.main_body_sjhm{
 						@include size(null,55px,null);
@@ -180,6 +180,7 @@
 		}
 		.main_foot{
 			@include size(1236px,139px,null);
+			overflow: hidden;
 			p{
 				@include font(16px,null,#333);
 				text-align: center;

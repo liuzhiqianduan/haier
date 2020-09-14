@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/register.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pagespublic.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/dragverify.min.css">
 	</head>
 	<body>
 <!-- header -->
@@ -30,10 +32,81 @@
 					<p>一个账号便利享受Haier所有服务</p>
 				</div>
 				<div class="main_body">
-					<div class="main_body_box"></div>
+					<div class="main_body_box">
+						
+						<div class="main_module">
+							<form action="">
+								<div class="main_body_sjhm">
+									<span>手机号码</span>
+									<input type="text" value="" id="sjhm">
+									<label for="sjhm">购买，安装，报修，手机注册更方便</label>
+								</div>
+								<div class="main_body_pwd">
+									<span>密码</span>
+									<input type="password" name="" id="pwd">
+									<label for="pwd">6-16位，数字，字母或符号组合</label>
+								</div>
+								<div class="main_body_yz">
+									<span>验证</span>
+									<div id="dragverify"></div>
+								</div>
+								<div class="main_body_jh">
+									<span>激活码</span>
+									<input type="text" name="" id="jh">
+									<ul>
+										<li>发送验证码到手机</li>
+									</ul>
+									<label for="jh">短信验证码</label>
+								</div>
+								<div class="main_body_yqm">
+									<span>邀请人</span>
+									<input type="text" name="" id="yqm">
+									<label for="yqm">登录名/手机号/邀请码</label>
+								</div>
+							</form>
+						</div>
+						<div class="changer">
+							使用
+							<a href="">邮箱注册</a>
+							或
+							<a href="">短信注册</a>
+						</div>
+						<p class="login">注册</p>
+						<p class="consent">
+							<i></i>
+							我同意
+							<a href="">《海尔注册用户服务条款》</a>
+							<a href="">《法律声明及隐私权政策》</a>
+						</p>
+					</div>
 				</div>
-				<div class="main_foot"></div>
+				<div class="main_foot">
+					<p>Haier账号支持所有产品和服务</p>
+				</div>
 			</div>
 		</div>
+<!-- foot -->
+		<div class="footer">
+			<div class="foot">
+				<div class="foot_boxleft">
+					<a href="">关于海尔</a>
+					｜
+					<a href="">联系我们</a>
+					｜
+					<a href="">法律声明</a>
+					｜
+					<a href="">帮助中心</a>
+					｜
+					<a href="">海尔门店</a>
+				</div>
+				<div class="foot_boxright">
+					<span>鲁ICP备09096283</span>
+					｜
+					<span>© 2000-2020 Haier.com. All rights reserved.</span>
+				</div>
+			</div>
+		</div>
+		<script src="../js/jquery-1.12.4.min.js"></script>
+   		<script type="text/javascript" src="../js/dragverify.min.js"></script>
 	</body>
 </html>

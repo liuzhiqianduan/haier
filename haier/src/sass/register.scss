@@ -1,61 +1,190 @@
 // 导入公共样式
 @import 'public';
-/* header */
-.header_box{
-	width: 100%;
-	background: white;
-}
-.headers{
-	@include size(1236px,60px,null);
-	margin: 0 auto;
 
-}
-.header_left{
-	@include size(618px,60px,left);
-	span{
-		@include font(16px,60px,#333);
-		margin-left: 18px;
-	}
-}
-.header_right{
-	@include size(618px,60px,right);
-	p{
-		@include font(14px,60px,#333);
-		display: block;
-		text-align: right;
-	}
-	a{
-		@include font(null,null,#32beff);
-	}
-}
-.header_logo{
-	@include size(71px,21px,null);
-	display: inline-block;
-	vertical-align: text-bottom;
-	background: url(../img/login_icon_1010.gif) no-repeat -39px -61px;
-}
-
-/* main */
+// main
 .main_box{
-	@include size(100%,792px,null);
+	@include size(100%,769px,null);
 	background: url(../img/vipuser_zhuce_bg3.jpg) no-repeat;
-}
-.main{
-	@include size(1236px,769px,null);
-	margin: 0 auto;
-	.main_header{
-		@include size(1236px,150px,null);
-		p{
-			@include font(28px,150px,#333);
-			text-align: center;
+	.main{
+		@include size(1236px,769px,null);
+		margin: 0 auto;
+		.main_header{
+			@include size(1236px,150px,null);
+			p{
+				@include font(28px,150px,#333);
+				text-align: center;
+			}
 		}
-	}
-	.main_body{
-		@include size(null,480px,null);
-		.main_body_box{
-			@include size(840px,480px,null);
-			margin: 0 auto;
-			background: white;
+		.main_body{
+			@include size(null,480px,null);
+			.main_body_box{
+				@include size(840px,480px,null);
+				margin: 0 auto;
+				background: white;
+				padding-top: 46px;
+				box-sizing: border-box;
+				.main_module{
+					@include size(430px,275px,left);
+					margin-left: 177px;
+					.main_body_sjhm{
+						@include size(null,55px,null);
+						position: relative;
+						span{
+							@include font(14px,40px,#666);
+							margin-left: -14px;
+							margin-right: 20px;
+							float: left;
+						}
+						#sjhm{
+							@include size(344px,32px,null);
+							@include font(14px,32px,#999);
+							padding: 3px 3px 3px 11px;
+							border: 1px solid #d6dbde;
+						}
+						label{
+							display: block;
+							@include font(14px,40px,#999);
+							margin-left: 74px;
+							position: absolute;
+							top: 0;
+						}
+					}
+					.main_body_pwd{
+						@include size(null,55px,null);
+						position: relative;
+						span{
+							@include font(14px,40px,#666);
+							margin-left: 17px;
+							margin-right: 17px;
+							float: left;
+						}
+						#pwd{
+							@include size(344px,32px,null);
+							@include font(14px,32px,#999);
+							padding: 3px 3px 3px 11px;
+							border: 1px solid #d6dbde;
+						}
+						label{
+							display: block;
+							@include font(14px,40px,#999);
+							margin-left: 76px;
+							position: absolute;
+							top: 0;
+						}
+					}
+					.main_body_yz{
+						@include size(null,55px,null);
+						position: relative;
+						span{
+							@include font(14px,40px,#666);
+							margin-left: 19px;
+							margin-right: 16px;
+							float: left;
+							display: block;
+						}
+						#dragverify{
+							float: left;
+						}
+					}
+					.main_body_jh{
+						@include size(null,55px,null);
+						position: relative;
+						span{
+							@include font(14px,40px,#666);
+							margin-right: 20px;
+							float: left;
+						}
+						#jh{
+							@include size(154px,32px,left);
+							@include font(14px,32px,#999);
+							padding: 3px 3px 3px 11px;
+							border: 1px solid #d6dbde;
+						}
+						ul{
+							li{
+								@include size(170px,40px,right);
+								@include font(14px,40px,#999);
+								text-align: center;
+								background: #f6f6f6;
+								margin-right: 8px;
+							}
+						}
+						label{
+							display: block;
+							@include font(14px,40px,#999);
+							margin-left: 76px;
+							position: absolute;
+							top: 0;
+						}
+					}
+					.main_body_yqm{
+						@include size(null,55px,null);
+						position: relative;
+						span{
+							@include font(14px,40px,#666);
+							margin-right: 20px;
+							float: left;
+						}
+						#yqm{
+							@include size(344px,32px,null);
+							@include font(14px,32px,#999);
+							padding: 3px 3px 3px 11px;
+							border: 1px solid #d6dbde;
+						}
+						label{
+							display: block;
+							@include font(14px,40px,#999);
+							margin-left: 76px;
+							position: absolute;
+							top: 0;
+						}
+					}
+				}
+				.changer{
+					@include size(182px,42px,left);
+					@include font(14px,40px,#666);
+					text-indent: 16px;
+					a{
+						color: #32beff;
+					}
+				}
+				.login{
+					@include size(360px,50px,null);
+					@include font(16px,50px,#fff);
+					text-align: center;
+					background-color: #c6cacb;
+					margin: 0 auto;
+					display: block;
+					letter-spacing: 2px;
+					clear: both;
+				}
+				.consent{
+					clear: both;
+					height: 24px;
+					text-align: center;
+					@include font(14px,24px,#999);
+					margin-top: 25px;
+					text-indent: 35px;
+					i{
+						display: inline-block;
+						@include size(24px,24px,null);
+						background: url(../img/login_icon_1010.gif) 0 -282px no-repeat;
+						vertical-align: middle;
+						margin-right: 10px;
+					}
+					a{
+						color: #32beff;
+					}
+				}
+			}
+		}
+		.main_foot{
+			@include size(1236px,139px,null);
+			p{
+				@include font(16px,null,#333);
+				text-align: center;
+				margin-top: 40px;
+			}
 		}
 	}
 }

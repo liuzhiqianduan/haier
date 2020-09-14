@@ -1,0 +1,64 @@
+// 导入公共样式
+@import 'public';
+
+// 登陆注册页面头部脚部公用样式
+// header
+.header_box{
+	width: 100%;
+	background: white;
+}
+.headers{
+	@include size(1236px,60px,null);
+	margin: 0 auto;
+
+}
+.header_left{
+	@include size(618px,60px,left);
+	span{
+		@include font(16px,60px,#333);
+		margin-left: 18px;
+	}
+}
+.header_right{
+	@include size(618px,60px,right);
+	p{
+		@include font(14px,60px,#333);
+		display: block;
+		text-align: right;
+	}
+	a{
+		@include font(null,null,#32beff);
+	}
+}
+.header_logo{
+	@include size(71px,21px,null);
+	display: inline-block;
+	vertical-align: text-bottom;
+	background: url(../img/login_icon_1010.gif) no-repeat -39px -61px;
+}
+
+// foot
+.footer{
+	@include size(1680px,null,null);
+	background: #2b2c2d;
+	padding: 20px 0;
+	.foot{
+		@include size(1236px,null,null);
+		margin: 0 auto;
+		overflow: hidden;
+		.foot_boxleft{
+			@include size(null,null,left);
+			color: #666;
+				a{
+				@include font(12px,12px,#666);
+			}
+		}
+		.foot_boxright{
+			@include size(null,null,right);
+			color: #999;
+			span{
+				@include font(12px,12px,#999);
+			}
+		}
+	}
+}

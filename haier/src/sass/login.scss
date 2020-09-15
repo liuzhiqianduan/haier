@@ -9,15 +9,26 @@
 }
 
 // main
+// 清除浮动
+.main:after{
+    content:"";
+    display:block;
+    clear:both;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+    }
+// 主体css
 .main{
     @include size(100%,null,null);
     background: url(../img/vipuser_denglubg3.jpg) no-repeat 50%;
     .main_box{
-        @include size(1236px,867px,null);
+        @include size(1236px,null,null);
         margin: 0 auto;
         .main_box_body{
-            @include size(618px,488px,right);
+            @include size(618px,null,right);
             margin-top: 218.5px;
+            margin-bottom: 160px;
             .main_box_bodys{
                 @include size(420px,null,null);
                 background: #ffffff;
@@ -143,42 +154,60 @@
                         @include font(14px,50px,#999);
                     }
                 }
-            }
-            .consent{
-                margin-left: 30px;
-                @include font(14px,24px,#666);
-                margin-bottom: 20px;
-                text-indent: 11px;
-                i{
-                    display: block;
-                    float: left;
-                    @include size(24px,24px,null);
-                    background: url(../img/login_icon_1010.gif) 0 -282px no-repeat;
+                .consent{
+                    margin-left: 30px;
+                    @include font(14px,24px,#666);
+                    margin-bottom: 20px;
+                    text-indent: 11px;
+                    i{
+                        display: block;
+                        float: left;
+                        @include size(24px,24px,null);
+                        background: url(../img/login_icon_1010.gif) 0 -282px no-repeat;
+                    }
+                    a{
+                        color: #32beff;
+                        font-size: 12px;
+                    }
                 }
-                a{
-                    color: #32beff;
-                    font-size: 12px;
+                .consent_botton{
+                    margin-left: 30px;
+                    @include font(14px,24px,#666);
+                    margin-bottom: 20px;
+                    text-indent: 11px;
+                    i{
+                        display: block;
+                        float: left;
+                        @include size(24px,24px,null);
+                        background: url(../img/login_icon_1010.gif) 0 -306px no-repeat;
+                    }
                 }
-            }
-            .consent_botton{
-                margin-left: 30px;
-                @include font(14px,24px,#666);
-                margin-bottom: 20px;
-                text-indent: 11px;
-                i{
-                    display: block;
-                    float: left;
-                    @include size(24px,24px,null);
-                    background: url(../img/login_icon_1010.gif) 0 -306px no-repeat;
+                .login_btn{
+                    @include size(360px,50px,null);
+                    @include font(16px,50px,#fff);
+                    text-align: center;
+                    letter-spacing: 2px;
+                    background-color: #c6cacb;
+                    margin: 0 auto;
                 }
-            }
-            .login_btn{
-                @include size(360px,50px,null);
-                @include font(16px,50px,#fff);
-                text-align: center;
-                letter-spacing: 2px;
-                background-color: #c6cacb;
-                margin: 0 auto;
+            } 
+            .herf{
+                @include size(420px,20px,null);
+                @include font(14px,20px,#666);
+                padding-top: 20px;
+                margin-left: 40px;
+                ul{
+                    margin-left: 80px;
+                    li{
+                        float: left;
+                        margin-right: 17px;
+                        a{
+                            vertical-align: bottom;
+                            @include font(14px,20px,#fff);
+                            display: inline-block;
+                        }
+                    }
+                }
             }
         }
     }

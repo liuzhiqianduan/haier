@@ -42,23 +42,23 @@
 	@include size(100%,null,null);
 	background: #2b2c2d;
 	padding: 20px 0;
+	color: #515252;
+	font-size: 10px;
 	.foot{
 		@include size(1236px,null,null);
 		margin: 0 auto;
 		overflow: hidden;
-		.foot_boxleft{
-			@include size(null,null,left);
-			color: #666;
-				a{
-				@include font(12px,12px,#666);
-			}
+		a{
+			@include font(12px,null,#666);
+			cursor: pointer;
 		}
-		.foot_boxright{
-			@include size(null,null,right);
-			color: #999;
-			span{
-				@include font(12px,12px,#999);
-			}
+		.foot_box{
+			float: right;
+			@include font(12px,null,#999);
 		}
+		
 	}
+}
+#ss:hover{
+	color: #32beff;
 }

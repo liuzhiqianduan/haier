@@ -1,0 +1,382 @@
+// 导入公共样式
+@import 'public';
+
+// 公共样式添加
+body{
+    font-family: "微软雅黑"!important;
+}
+// 头部添加
+.boxs{
+    box-sizing: border-box;
+}
+// 头部划过
+.boxs:hover .yc{
+    display: block !important;
+    z-index: 9999;
+}
+.boxs:hover span{
+    color: #0c5ca8 !important;
+}
+.yc a:hover{
+    color: #0c5ca8 !important;
+    background: #fff;
+}
+// 尾部划过
+.nav_xg:hover{
+    text-decoration: underline;
+}
+// 头部
+.header{
+    @include size(100%,null,null);
+    max-width: 1680px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-left: auto;
+    margin-right: auto;
+    .header_box{
+        max-width: 1230px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+        display: block;
+        .header_box_left{
+            width: 75%;
+            display: inline-block;
+            text-rendering: auto;
+            box-sizing: border-box;
+            .header_login{
+                display: inline-block;
+                box-sizing: border-box;
+                vertical-align: middle;
+                a{
+                    img{
+                        width: 85px;
+                    }
+                }
+            }
+            .nav{
+                margin-left: 80px;
+                display: inline-block;
+                .zh{
+                    height: 70px;
+                    padding: 0 30px;
+                    position: relative;
+                    display: inline-block;
+                    float: left;
+                    span{
+                        @include font(14px,70px,#333);
+                        font-weight: 700;
+                    }
+                    div{
+                        width: 140px;
+                        position: absolute;
+                        top: 70px;
+                        left: 0;
+                        display: none;
+                        background: #f6f6f6;
+                        p{
+                            @include size(100%,6px,null);
+                            background: #005aaa;
+                            top: -6px;
+                            left: 0;
+                            position: absolute;
+                            display: inline-block;
+                        }
+                        a{
+                            @include size(100%,50px,null);
+                            @include font(14px,50px,#444);
+                            box-sizing: border-box;
+                            display: inline-block;
+                            padding: 0 0 0 30px;
+                            text-align: left;
+                        }
+                    }
+                }
+                .gr{
+                    height: 70px;
+                    padding: 0 30px;
+                    position: relative;
+                    display: inline-block;
+                    float: left;
+                    span{
+                        @include font(14px,70px,#333);
+                        font-weight: 700;
+                    }
+                    div{
+                        width: 180px;
+                        position: absolute;
+                        top: 70px;
+                        left: 0;
+                        display: none;
+                        background: #f6f6f6;
+                        p{
+                            @include size(100%,6px,null);
+                            background: #005aaa;
+                            top: -6px;
+                            left: 0;
+                            position: absolute;
+                            display: inline-block;
+                        }
+                        a{
+                            @include size(100%,50px,null);
+                            @include font(14px,50px,#444);
+                            box-sizing: border-box;
+                            display: inline-block;
+                            padding: 0 0 0 30px;
+                            text-align: left;
+                        }
+                    }
+                }
+                .sy{
+                    height: 70px;
+                    padding: 0 30px;
+                    position: relative;
+                    display: inline-block;
+                    float: left;
+                    span{
+                        @include font(14px,70px,#333);
+                        font-weight: 700;
+                    }
+                    div{
+                        width: 140px;
+                        position: absolute;
+                        top: 70px;
+                        left: 0;
+                        display: none;
+                        background: #f6f6f6;
+                        p{
+                            @include size(100%,6px,null);
+                            background: #005aaa;
+                            top: -6px;
+                            left: 0;
+                            position: absolute;
+                            display: inline-block;
+                        }
+                        a{
+                            @include size(100%,50px,null);
+                            @include font(14px,50px,#444);
+                            box-sizing: border-box;
+                            display: inline-block;
+                            padding: 0 0 0 30px;
+                            text-align: left;
+                        }
+                    }
+                }
+                .gm{
+                    height: 70px;
+                    padding: 0 30px;
+                    position: relative;
+                    display: inline-block;
+                    float: left;
+                    span{
+                        @include font(14px,70px,#333);
+                        font-weight: 700;
+                    }
+                    div{
+                        width: 140px;
+                        position: absolute;
+                        top: 70px;
+                        left: 0;
+                        display: none;
+                        background: #f6f6f6;
+                        p{
+                            @include size(100%,6px,null);
+                            background: #005aaa;
+                            top: -6px;
+                            left: 0;
+                            position: absolute;
+                            display: inline-block;
+                        }
+                        a{
+                            @include size(100%,50px,null);
+                            @include font(14px,50px,#444);
+                            box-sizing: border-box;
+                            display: inline-block;
+                            padding: 0 0 0 30px;
+                            text-align: left;
+                        }
+                    }
+                }
+                .gy{
+                    height: 70px;
+                    padding: 0 30px;
+                    position: relative;
+                    display: inline-block;
+                    span{
+                        @include font(14px,70px,#333);
+                        font-weight: 700;
+                    }
+                    div{
+                        width: 140px;
+                        position: absolute;
+                        top: 70px;
+                        left: 0;
+                        display: none;
+                        background: #f6f6f6;
+                        p{
+                            @include size(100%,6px,null);
+                            background: #005aaa;
+                            top: -6px;
+                            left: 0;
+                            position: absolute;
+                            display: inline-block;
+                        }
+                        a{
+                            @include size(100%,50px,null);
+                            @include font(14px,50px,#444);
+                            box-sizing: border-box;
+                            display: inline-block;
+                            padding: 0 0 0 30px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        .header_box_right{
+            width: 25%;
+            float: right;
+            .tools{
+                height: 70px;
+                .inpu{
+                    width: 210px;
+                    position: relative;
+                    .inpu_box{
+                        display: inline-block;
+                        @include size(80%,36px,null);
+                        background: #fafafa;
+                        border: 1px solid #fafafa;
+                        padding: 0 15% 0 5%;
+                        margin-top: 16px;
+                        position: relative;
+                        .inpu_box_s{
+                            label{
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%;
+                                text-align: left;
+                                line-height: 36px;
+                                color: #aaa;
+                                font-size: 12px;
+                            }
+                            #tex{
+                                border: none;
+                                vertical-align: middle;
+                                color: #aaa;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+                                background-color: transparent;
+                            }
+                            .icon-sousuo{
+                                font-size: 24px;
+                                position: absolute;
+                                top: 6px;
+                            }
+                        }
+                    }
+                    .gwc{
+                        span{
+                            font-size: 26px;
+                            position: absolute;
+                            top: 22px;
+                            left: 226px;
+                        }
+                    }
+                    .icon-user{
+                        font-size: 26px;
+                        position: absolute;
+                        top: 22px;
+                        left: 267px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// foot
+.foot{
+    @include size(100%,null,null);
+    background: #f6f7f9;
+    .foot_box{
+        @include size(1200px,428px,null);
+        margin: 0 auto;
+        padding: 10px 15px 0;
+        .nav_list{
+            height: 347px;
+            div{
+                @include size(200px,null,left);
+                
+                span{
+                    font-size: 14px;
+                    padding: 15px 0;
+                    font-weight: 700;
+                    display: inline-block;
+                }
+                a{
+                    @include font(12px,null,#444);
+                    width: auto;
+                    padding: 5px 0;
+                    display: inline-block;
+                }
+            }
+        }
+        .foot_nav{
+            height: 27px;
+            padding: 15px 0;
+            border-top: 1px solid #c8c8c8;
+            margin-top: 23px;
+            .o_u{
+                width: 31%;
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: middle;
+                a{
+                    @include font(12px,15px,#444);
+                    display: inline-block;
+                    float: left;
+                }
+                i{
+                    padding: 0 10px;
+                    font-style: normal;
+                    display: inline-block;
+                    @include font(12px,15px,#444);
+                    float: left;
+                }
+            }
+            .o_a{
+                width: 38%;
+                text-align: center;
+                display: inline-block;
+                a{
+                    @include font(12px,1.25,#444);
+                    display: inline-block;
+                }
+                i{
+                    padding: 0 10px;
+                    font-style: normal;
+                    @include font(12px,1.25,#444);
+                }
+                span{
+                    @include font(12px,1.25,#444);
+                    display: inline-block;
+                }
+            }
+            .o_r{
+                width: 30%;
+                text-align: right;
+                display: inline-block;
+                span{
+                    @include font(12px,1.25,#444);
+                    display: inline-block;
+                }
+                a{
+                    color: #0c5ca8;
+                }
+            }
+        }
+    }
+}

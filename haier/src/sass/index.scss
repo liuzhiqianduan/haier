@@ -1,0 +1,91 @@
+// 导入公共样式
+@import 'public';
+// body
+.bout_list ul li:hover{
+    border-bottom: 6px solid #005aaa;
+    color: #005aaa;
+}
+.body{
+    width: 100%;
+    .lbt{
+        height: 560px;
+    }
+    .boutique{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        .bout_logo{
+            @include font(42px,42px,#000);
+            margin-bottom: 20px;
+            padding-top: 56px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .bout_list{
+            ul{
+                @include size(100%,60px,null);
+                border-bottom: 1px solid #d8d8d8;     
+                text-align: left;
+                max-width: 1200px;
+                display: block;
+                margin: 0 auto;
+                padding: 0;
+                box-sizing: border-box;
+                white-space: nowrap;
+                li{
+                    display: inline-block;
+                    cursor: pointer;
+                    vertical-align: top;
+                    @include size(200px,59px,null);
+                    box-sizing: border-box;
+                    text-align: center;
+                    span{
+                        line-height: 58px;
+                        height: 59px;
+                        font-size: 18px;
+                        color: #444444;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .bout_xq{
+            height: 648px;
+            margin-top: 60px;
+            padding-bottom: 36px;
+            .xq_left{
+                float: left;
+                @include size(500px,648px,left);
+                background: #e8ebf2;
+                .xq_left_fa{
+                    height: 460px;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    text-align: center;
+                }
+            }
+            .xq_auto{
+                float: left;
+                .shoping1{
+                    @include size(350px,324px,null);
+                }
+                .shoping2{
+                    @include size(350px,324px,null);
+                    background: #fbfbfb;
+                }
+            }
+            .xq_right{
+                float: left;
+                .shoping3{
+                    @include size(350px,324px,null);
+                    background: #f1f2f6;
+                }
+                .shoping4{
+                    @include size(350px,324px,null);
+                }
+            }
+        }
+    }
+}

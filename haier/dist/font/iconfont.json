@@ -1,0 +1,30 @@
+{
+  "id": "2070631",
+  "name": "海尔",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "376345",
+      "name": "个人中心",
+      "font_class": "user",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "1089769",
+      "name": "购物车 ",
+      "font_class": "gouwuche1",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "16392826",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e6d3",
+      "unicode_decimal": 59091
+    }
+  ]
+}

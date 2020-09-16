@@ -3,7 +3,259 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<link rel="stylesheet" href="./css/index.min.css">
+		<link rel="stylesheet" href="./css/indexorpages.min.css">
+		<link rel="stylesheet" href="./css/banner.min.css">
+		<link rel="stylesheet" href="./font/iconfont.css">
+		<script src="./js/jquery-1.12.4.min.js"></script>
+		<script src="./js/banner.min.js"></script>
 	</head>
 	<body>
-	</body>
+<!-- header  -->
+		<div class="header">
+			<div class="header_box">
+				<div class="header_box_left">
+					<div class="header_login">
+						<a href="">
+							<img src="./img/haier2019_logo.jpg" alt="">
+						</a>
+					</div>
+					<div class="nav">
+						<div class="zh boxs">
+							<span>智慧家庭</span>
+							<div class="yc">
+								<p></p>
+								<a href="">智慧首页</a>
+								<a href="">智家方案</a>
+								<a href="">智慧家电</a>
+								<a href="">生活资讯</a>
+								<a href="">智慧体验店</a>
+							</div>
+						</div>
+						<div class="gr boxs">
+							<span>个人与家用产品</span>
+							<div class="yc">
+								<p></p>
+								<a href="">冰箱冰柜</a>
+								<a href="">冰吧酒柜</a>
+								<a href="">洗衣机</a>
+								<a href="">空调</a>
+								<a href="">电视</a>
+								<a href="">热水器</a>
+								<a href="">电厨房电器</a>
+								<a href="">电脑</a>
+								<a href="">小家电</a>
+							</div>
+						</div>
+						<div class="sy boxs">
+							<span>商业解决方案</span>
+							<div class="yc">
+								<p></p>
+								<a href="">中央空调</a>
+								<a href="">商用冷柜</a>
+								<a href="">商用洗涤</a>
+								<a href="">商用电视</a>
+								<a href="">商用电脑</a>
+								<a href="">U-home</a>
+								<a href="">商用净水器</a>
+								<a href="">商用热泵</a>
+							</div>
+						</div>
+						<div class="gm boxs">
+							<span>购买与服务</span>
+							<div class="yc">
+								<p></p>
+								<a href="">产品导购</a>
+								<a href="">产品购买</a>
+								<a href="">服务与支持</a>
+								<a href="">会员尊享</a>
+							</div>
+						</div>
+						<div class="gy boxs">
+							<span>关于海尔</span>
+							<div class="yc">
+								<p></p>
+								<a href="">海尔品牌</a>
+								<a href="">投资者关系</a>
+								<a href="">品牌资讯</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header_box_right">
+					<div class="tools">
+						<div class="inpu">
+							<div class="inpu_box">
+								<div class="inpu_box_s">
+									<label for="tex">大容量洗衣机</label>
+									<input type="text" name="" id="tex">
+									<span class="iconfont icon-sousuo"></span>
+								</div>
+							</div>
+							<div class="gwc">
+								<span class="iconfont icon-gouwuche1"></span>
+							</div>
+							<span class="iconfont icon-user"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- body -->
+		<div class="body">
+			<div class="lbt">
+				<!-- 轮播图 -->
+				<div class="banners">
+				<!--受保护块，不建议修改》》》-->
+				<div class="click_left"><img class="get_height" onclick="banner_left_right('left')" src="./img/banner_left.png"></div>
+				<div class="click_right"><img onclick="banner_left_right('right')" src="./img/banner_right.png"></div>
+				<div class="number">
+					<div class="numbers"></div>
+					<div style="clear: both;"></div>
+				</div>
+				<!--《《《受保护块，不建议修改-->
+				<!--onlick事件调用函数link(参数1，参数2)>>>参数1:跳转链接; 参数2:跳转方式（true:在新的窗口打开链接,false:在当前窗口打开链接）-->
+				<div class="banner_img">
+					<!--在此位置内添加img标签即可>>>-->
+					<img class="banner_img1" src="./img/l1.jpeg" onclick="link('http://www.baidu.com',true)">
+					<img class="banner_img2" src="./img/l2.jpg" onclick="link('http://www.baidu.com',false)">
+					<img class="banner_img3" src="./img/l3.jpg" onclick="link('http://www.baidu.com',true)">
+					<img class="banner_img4" src="./img/l4.jpg" onclick="link('http://www.baidu.com',false)">
+					<!--<<<在此位置内添加img标签即可-->
+				</div>
+				<!--此段代码不可移动位置-->
+				<script type="text/javascript">
+					loads();
+				</script>
+				<!--此段代码不可移动位置-->
+				</div>
+			</div>
+			<div class="boutique">
+				<div class="bout_logo">心选精品</div>
+				<div class="bout_list">
+					<ul>
+						<li>
+							<span>智慧家电</span>
+						</li>
+						<li><span>健康抑菌</span></li>
+						<li><span>青春风尚</span></li>
+						<li><span>颜值控</span></li>
+						<li><span>黑科技</span></li>
+						<li><span>成套臻选</span></li>
+					</ul>
+				</div>
+				<div class="bout_xq">
+					<div class="xq_left">
+						<div class="xq_left_fa">
+							<img src="./img/W020200717340821864227.jpg" alt="">
+						</div>
+						<div class="xq_left_name">先行者 3匹柜式变频空调</div>
+						<div class="xq_left_id">KFR-72LW/17EDS21AU1</div>
+						<p></p>
+					</div>
+					<div class="xq_auto">
+						<div class="shoping1"></div>
+						<div class="shoping2"></div>
+					</div>
+					<div class="xq_right">
+						<div class="shoping3"></div>
+						<div class="shoping4"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- foot -->
+		<div class="foot">
+			<div class="foot_box">
+				<div class="nav_list">
+					<div class="zhjt">
+						<span>智慧家庭</span>
+						<ul>
+							<li><a href="" class="nav_xg">智慧首页</a></li>
+							<li><a href="" class="nav_xg">智家方案</a></li>
+							<li><a href="" class="nav_xg">智慧家电</a></li>
+							<li><a href="" class="nav_xg">生活资讯</a></li>
+							<li><a href="" class="nav_xg">智慧体验店</a></li>
+						</ul>
+					</div>
+					<div>
+						<span>个人与家用产品</span>
+						<ul>
+							<li><a href="" class="nav_xg">冰箱</a></li>
+							<li><a href="" class="nav_xg">冰柜</a></li>
+							<li><a href="" class="nav_xg">冰吧</a></li>
+							<li><a href="" class="nav_xg">酒柜</a></li>
+							<li><a href="" class="nav_xg">洗衣机</a></li>
+							<li><a href="" class="nav_xg">空调</a></li>
+							<li><a href="" class="nav_xg">电视</a></li>
+							<li><a href="" class="nav_xg">热水器</a></li>
+							<li><a href="" class="nav_xg">厨房电器</a></li>
+							<li><a href="" class="nav_xg">电脑</a></li>
+							<li><a href="" class="nav_xg">小家电</a></li>
+						</ul>
+					</div>
+					<div>
+						<span>商业解决方案</span>
+						<ul>
+							<li><a href="" class="nav_xg">中央空调</a></li>
+							<li><a href="" class="nav_xg">商用冷柜</a></li>
+							<li><a href="" class="nav_xg">商用洗涤</a></li>
+							<li><a href="" class="nav_xg">商用电视</a></li>
+							<li><a href="" class="nav_xg">商用电脑</a></li>
+							<li><a href="" class="nav_xg">U-home</a></li>
+							<li><a href="" class="nav_xg">商用净水设备</a></li>
+							<li><a href="" class="nav_xg">商用热泵</a></li>
+						</ul>
+					</div>
+					<div>
+						<span>购买与服务</span>
+						<ul>
+							<li><a href="" class="nav_xg">产品导购</a></li>
+							<li><a href="" class="nav_xg">产品购买</a></li>
+							<li><a href="" class="nav_xg">服务与支持</a></li>
+							<li><a href="" class="nav_xg">会员尊享</a></li>
+						</ul>
+					</div>
+					<div>
+						<span>关于海尔</span>
+						<ul>
+							<li><a href="" class="nav_xg">海尔品牌</a></li>
+							<li><a href="" class="nav_xg">投资者关系</a></li>
+							<li><a href="" class="nav_xg">品牌资讯</a></li>
+						</ul>
+					</div>
+					<div>
+						<span>友情链接</span>
+						<ul>
+							<li><a href="" class="nav_xg">智慧生活体验馆</a></li>
+							<li><a href="" class="nav_xg">创客实验室</a></li>
+							<li><a href="" class="nav_xg">COSMCOSMOPlat平台</a></li>
+							<li><a href="" class="nav_xg">海尔创意平台</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="foot_nav">
+					<div class="o_u">
+						<a href="">关于海尔</a>
+						<i>|</i>
+						<a href="">法律声明</a>
+						<i>|</i>
+						<a href="">联系我们</a>
+						<i>|</i>
+						<a href="">帮助中心</a>
+						<i>|</i>
+						<a href="">海尔门店</a>
+					</div>
+					<div class="o_a">
+						<span><a href="">鲁ICP备09096283</a></span>
+						<i class="o_xs-hide"> | </i>
+						<span>© 2000-2020 Haier.com. All rights reserved.</span>
+					</div>
+					<div class="o_r">
+						<div class="wp"><span>Haier 全球网站群 · <a href="">中国</a></span>
+						<span class="gz">关注海尔</span>
+					</div>
+				</div>
+			</div>
+		</div>
 </html>

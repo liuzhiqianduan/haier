@@ -1,0 +1,50 @@
+// 导入公共样式
+@import 'public';
+
+// body
+.sp{
+    float: left;
+    text-align: center;
+}
+.body{
+    @include size(100%,520px,null);
+    .body_border{
+        @include size(100%,53px,null);
+        border-bottom: 1px solid #edecec;
+        background: #f8f8f8;
+        .body_list{
+            @include size(1400px,null,null);
+            padding: 10px 0;
+            margin: 0 auto;
+            @include font(14px,32px,#333);
+            .list_1{
+                width: 40.7%;
+            }
+            .list_2{
+                width: 18.6%;
+            }
+            .list_3{
+                width: 9.3%;
+            }
+            .list_4{
+                width: 9.3%;
+            }
+            .list_5{
+                width: 9.3%;
+            }
+            .list_6{
+                width: 9.3%;
+            }
+        }
+    }
+    .body_box{
+        @include size(1400px,466px,null);
+        margin: 0 auto;
+        padding: 60px 0 280px;
+        box-sizing: border-box;
+        text-align: center;
+        div{
+            @include font(20px,null,#333);
+        }
+    }
+}

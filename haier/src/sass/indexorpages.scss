@@ -25,6 +25,9 @@ body{
 .nav_xg:hover{
     text-decoration: underline;
 }
+.ch_color:hover{
+    color: #0c5ca8 !important;
+}
 // 头部
 .header{
     @include size(100%,null,null);

@@ -30,6 +30,12 @@
 .hobn:hover .fd{
     transform: scale(1.09);
 }
+.hobb:hover .fd{
+    transform: scale(1.11);
+}
+.hobb:hover{
+    background: url(../img/haier2019_homepage_linkbg_shadow.png) top center no-repeat !important;
+}
 .hob:hover .jdt{
     width: 100% !important;
 }
@@ -345,8 +351,13 @@
                     transition: all 0.8s;
                 }
             }
+            
             .brand_xq_right{
                 @include size(420px,575px,right);
+                .brand_xq_logo{
+                    @include size(60px,8px,null);
+                    background: #0c5ca8;
+                }
                 .brand_rtext_t{
                     @include size(420px,189px,null);
                     padding: 35px 0 20px;
@@ -373,6 +384,33 @@
                         bottom: 0;
                         transition: all 0.8s;
                     }
+                }
+            }
+        }
+    }
+    .link{
+        @include size(1200px,556px,null);
+        padding: 0 15px;
+        margin: 0 auto;
+        .link_logo{
+            @include size(1200px,42px,null);
+            padding: 105px 0 60px;
+            text-align: center;
+            @include font(42px,42px,#000000);
+            font-weight: bold;
+        }
+        .link_nav{
+            @include size(1200px,220px,null);
+            margin-bottom: 100px;
+            .link_nav1{
+                @include size(14.28%,220px,left);
+                padding: 0 6px;
+                box-sizing: border-box;
+                background: url(../img/haier2019_homepage_linkbg.png) top center no-repeat;
+                .fd{
+                    padding-top: 25%;
+                    text-align: center;
+                    transition: all 0.7s;
                 }
             }
         }

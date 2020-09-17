@@ -17,7 +17,7 @@
             </div>
             <div class="header_right">
                 <p>
-                    <a href="" class="header_login">
+                    <a href="register.html" class="header_login">
                         <span>注册海尔账号</span>
                     </a>
                     <span style="padding-left:20px;margin-left:20px;border-left:1px solid #e5e5e5;">
@@ -41,15 +41,15 @@
                     </ul>
                     <form action="">
                         <div class="login_text">
-                            <input type="text" name="" id="tx">
-                            <label for="ts">手机号/验证邮箱/用户名</label>
+                            <input type="text" name="" id="uname">
+                            <label for="uname">手机号/验证邮箱/用户名</label>
                             <span></span>
                         </div>
                         <div class="login_pwd">
-                            <input type="password" name="" id="pwd">
+                            <input type="password" name="" id="upwd">
                             <span id="pwd_icon"></span>
                             <a href=""><span></span></a>
-                            <label for="pwd">登录密码</label>
+                            <label for="upwd">登录密码</label>
                         </div>
                     </form>
                     <p class="consent">
@@ -62,7 +62,7 @@
                         <i></i>
                         两周内免登录
                     </p>
-                    <p class="login_btn">登录</p>
+                    <a href="javascript:;" id="log">登录</a>
                 </div>
                 <div class="herf">
                     <ul>
@@ -95,5 +95,8 @@
         </div>
     </div>
 </div>
+    <script src="../js/cookie.min.js"></script>
+    <script src="../js/tool.min.js"></script>
+    <script src="../js/login.min.js"></script>       
 </body>
 </html>

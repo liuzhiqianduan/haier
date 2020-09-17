@@ -90,7 +90,7 @@
                     margin: 0 auto;
                     position: relative;
                     background: #fff;
-                    #tx{
+                    #uname{
                         @include size(307px,42px,null);
                         @include font(14px,42px,#999);
                         padding: 3px 3px 3px 48px;
@@ -120,7 +120,7 @@
                     margin: 0 auto;
                     position: relative;
                     background: #fff;
-                    #pwd{
+                    #upwd{
                         @include size(272px,42px,null);
                         @include font(14px,42px,#999);
                         padding: 3px 38px 3px 48px;
@@ -182,13 +182,14 @@
                         background: url(../img/login_icon_1010.gif) 0 -306px no-repeat;
                     }
                 }
-                .login_btn{
+                #log{
                     @include size(360px,50px,null);
                     @include font(16px,50px,#fff);
                     text-align: center;
                     letter-spacing: 2px;
                     background-color: #c6cacb;
                     margin: 0 auto;
+                    display: block;
                 }
             } 
             .herf{

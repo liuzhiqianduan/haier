@@ -31,11 +31,10 @@
 						position: relative;
 						span{
 							@include font(14px,40px,#666);
-							margin-left: -14px;
 							margin-right: 20px;
 							float: left;
 						}
-						#sjhm{
+						#uname{
 							@include size(344px,32px,null);
 							@include font(14px,32px,#999);
 							padding: 3px 3px 3px 11px;
@@ -58,7 +57,7 @@
 							margin-right: 17px;
 							float: left;
 						}
-						#pwd{
+						#upwd{
 							@include size(344px,32px,null);
 							@include font(14px,32px,#999);
 							padding: 3px 3px 3px 11px;
@@ -148,7 +147,7 @@
 						color: #32beff;
 					}
 				}
-				.login{
+				#reg{
 					@include size(360px,50px,null);
 					@include font(16px,50px,#fff);
 					text-align: center;

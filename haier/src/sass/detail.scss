@@ -13,13 +13,31 @@
 .body {
     @include size(100%, null, null);
     .body_box_bg {
-        @include size(100%, 592px, null);
+        @include size(100%, 690px, null);
         background: #f0f1f4;
-    }
-    .body_box {
-        @include size(1200px, 592px, null);
-        padding: 0 15px;
-        margin: 0 auto;
+        padding-top: 22px;
+        box-sizing: border-box;
+        overflow: hidden;
+        .body_box {
+            @include size(1200px, 668px, null);
+            padding: 0 15px;
+            margin: 0 auto;
+            .body_box_nav {
+                @include font(14px, 14px, #444);
+                float: left;
+                a {
+                    color: #444;
+                }
+            }
+            .body_box_img {
+                @include size(500px, 552px, null);
+                margin-top: 55px;
+                float: left;
+                img {
+                    @include size(480px, 480px, null);
+                }
+            }
+        }
     }
     .body_nav_border {
         @include size(100%, 80px, null);
@@ -201,13 +219,13 @@
             }
         }
     }
-    .xq_box6 {
-        @include size(100%, 540px, null);
-        background: #fafafa;
-        .xq_box6_bg {
-            @include size(1200px, 540px, null);
-            padding: 0 15px;
-            margin: 0 auto;
-        }
-    }
+    // .xq_box6 {
+    //     @include size(100%, 540px, null);
+    //     background: #fafafa;
+    //     .xq_box6_bg {
+    //         @include size(1200px, 540px, null);
+    //         padding: 0 15px;
+    //         margin: 0 auto;
+    //     }
+    // }
 }
